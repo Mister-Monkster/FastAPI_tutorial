@@ -34,7 +34,6 @@ def get_book(id: int):
             return book
     raise HTTPException(status_code=404, detail="Книга не найдена")
 
-
 class New_book(BaseModel):
     title: str
     author: str
